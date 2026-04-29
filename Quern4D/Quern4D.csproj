@@ -4,6 +4,18 @@
     <TargetFramework>net10.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
+    <PackageId>Quern4D</PackageId>
+    <Authors>Jeffyshewan</Authors>
+    <Company>Quern4D</Company>
+    <Product>Quern4D</Product>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\Mods\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\Mods\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -36,6 +48,10 @@
     <Content Include="modinfo.json">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Patches\" />
   </ItemGroup>
 
 </Project>
