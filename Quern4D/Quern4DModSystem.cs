@@ -5,7 +5,7 @@ using Vintagestory.API.Server;
 
 namespace ModTemplate
 {
-    public class ModTemplateModSystem : ModSystem
+    public class Quern4DModSystem : ModSystem
     {
         // Called on server and client
         public override void Start(ICoreAPI api)
